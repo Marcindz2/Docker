@@ -1,6 +1,17 @@
-![stworzenie-obrazu](./ss/ss1.png)<br>
-![zaladowanie-do-dokera](./ss/ss2.png)<br>
-![wyswietlenie](./ss/ss3.png)<br>
+stworzenie obrazu
+
+![stworzenie-obrazu](./ss/ss1.png)
+
+zaladowanie
+
+![zaladowanie-do-dokera](./ss/ss2.png)
+
+wyswietlenie 
+
+![wyswietlenie](./ss/ss3.png)
+
+
+
 # Projdocker
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
