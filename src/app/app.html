@@ -1,0 +1,35 @@
+<header class="header">
+  <h1>Zaliczenia AMW</h1>
+</header>
+
+<div class="main-layout">
+  <aside class="sidebar">
+    <h3>Przedmioty</h3>
+    <button *ngFor="let subject of subjects"
+            (click)="selectedSubject = subject.id"
+            [class.active]="selectedSubject === subject.id">
+      {{ subject.name }}
+    </button>
+  </aside>
+
+  <section class="content">
+    <div *ngFor="let subject of subjects" [hidden]="selectedSubject !== subject.id" class="subject-details">
+      <h2>{{ subject.name }}</h2>
+      <p class="lead">Egzamin końcowy</p>
+
+      <div class="section">
+        <p><strong>Data:</strong> {{ subject.date }}</p>
+        <p><strong>Godzina:</strong> {{ subject.time }}</p>
+        <p><strong>Miejsce:</strong> {{ subject.place }}</p>
+        <p><strong>Prowadzący:</strong> {{ subject.teacher }}</p>
+      </div>
+
+      <div class="section">
+        <h3>Zakres materiału</h3>
+        <ul>
+          <li *ngFor="let topic of subject.topics">{{ topic }}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
